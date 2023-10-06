@@ -1,0 +1,229 @@
+@import "./fonts.css";
+@import './commons.css';
+
+
+/* --------------Main Page-------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------header--------------- */
+
+.header {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__block a {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__block a:hover {
+    color: var(--white-header-text-hover);
+}
+
+.conditions {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-bottom: 50px;
+}
+
+.conditions__title_wrapper {
+    margin-bottom: 84px;
+}
+
+.conditions__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conditions__container__row_block-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.conditions__container__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.conditions__container__row_block {
+    padding: 40px 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    min-height: 453px;
+    width: 100%;
+    max-width: 410px;
+}
+
+.red-card {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    background: var(--main-third-color);
+    border-radius: 0px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-card img {
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+.red-card p {
+    color: var(--main-first-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.conditions__container__row_block-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditions__container__row_block-title {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.conditions__container__row_block-text {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.conditions__container__row_block-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.conditions__container__row_block-buttons_btn1 {
+    background: var(--main-four-color);
+    text-align: center;
+}
+
+.conditions__container__row_block-buttons_btn2 {
+    text-align: center;
+    background: transparent;
+    min-width: 276.58px;
+}
+
+.conditions__container__row_block-buttons_btn1:hover {
+    background: var(--orange-bg-hover);
+}
+
+.conditions__container__row_block-buttons_btn2:hover {
+    background: var(--white-bg-hover);
+}
+
+@media (max-width: 1360px) {
+    .conditions__container__row {
+        flex-direction: row;
+    }
+
+    .conditions__container {
+        flex-direction: column;
+    }    
+
+    .conditions__container__row_block {
+        max-width: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .conditions__container__row {
+        flex-direction: column;
+    }
+
+    .conditions__title_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conditions__container__row_block {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .conditions__container__row_block-img img {
+        width: 280px;
+    }
+
+    .red-card img {
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+    }
+
+    .red-card p {
+        font-size: 14px;
+    }
+
+    .conditions__container__row_block-title {
+        font-size: 18px;
+    }
+
+    .conditions__container__row_block-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 330px) {
+    .conditions__container__row_block-buttons_btn1 {
+        min-width: 230px;
+    }
+
+    .conditions__container__row_block-buttons_btn2 {
+        min-width: 230px;
+    }
+}

@@ -1,0 +1,150 @@
+@import "./fonts.css";
+@import './commons.css';
+
+
+/* --------------FAQ-------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__block a {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__block a:hover {
+    color: var(--white-header-text-hover);
+}
+
+.info {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-bottom: 50px;
+}
+
+.info__title_wrapper {
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background: transparent;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.name p {
+    font-weight: 600;
+}
+
+/* .active, .accordion:hover {
+    background-color: var(--white-bg-hover);
+} */
+
+.xmarkActive {
+    transform: rotate(45deg);
+}
+
+.xmarkDeactive {
+    transform: rotate(0deg);
+}
+
+.xmark {
+    font-size: 30px;
+    color: var(--main-four-color);
+    max-height: 34.67px;
+    min-width: 34.67px;
+    height: 34.67px;
+    width: 34.67px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.xmark:hover {
+    font-size: 40px;
+    color: var(--main-first-color);
+    background: var(--main-four-color);
+}
+
+.border {
+    height: 2px;
+    background: var(--main-four-color);
+    width: 100%;
+}
+ 
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 1300px) {
+    .info__title_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper {
+        flex-direction: column;
+    }
+}
+

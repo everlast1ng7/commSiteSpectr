@@ -1,0 +1,211 @@
+@import "./fonts.css";
+@import './commons.css';
+
+
+/* --------------Main Page-------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------header--------------- */
+
+.header {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__block a {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__block a:hover {
+    color: var(--white-header-text-hover);
+}
+
+.accecories {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-bottom: 50px;
+}
+
+.accecories__title_wrapper {
+    margin-bottom: 84px;
+}
+
+.accecories__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.accecories__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.accecories__container__row_block-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.accecories__container__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.accecories__container__row_block {
+    padding: 40px 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    min-height: 453px;
+    width: 700px;
+    min-height: 545px;
+    max-width: 700px;
+}
+
+.accecories__container__row_block-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accecories__container__row_block-title {
+    color: var(--main-second-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.accecories__container__row_block-text {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.accecories__container__row_block-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.accecories__container__row_block-buttons_btn1 {
+    background: var(--main-four-color);
+    text-align: center;
+}
+
+.accecories__container__row_block-buttons_btn2 {
+    text-align: center;
+    background: transparent;
+}
+
+.accecories__container__row_block-buttons_btn1:hover {
+    background: var(--orange-bg-hover);
+}
+
+.accecories__container__row_block-buttons_btn2:hover {
+    background: var(--white-bg-hover);
+}
+
+@media(max-width: 1900px) {
+    .accecories__container__row_block {
+        width: 100%;
+        min-width: 500px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .accecories__container__row {
+        flex-direction: row;
+    }
+
+    .accecories__container {
+        flex-direction: column;
+    }    
+
+    .accecories__container__row_block {
+        max-width: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .accecories__container__row {
+        flex-direction: column;
+    }
+
+    .accecories__title_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accecories__container__row_block {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .accecories__container__row_block {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 400px) {
+ .accecories__container__row_block-title {
+        font-size: 18px;
+    }
+
+    .accecories__container__row_block-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 330px) {
+    .accecories__container__row_block-buttons_btn1 {
+        min-width: 230px;
+    }
+
+    .accecories__container__row_block-buttons_btn2 {
+        min-width: 230px;
+    }
+}

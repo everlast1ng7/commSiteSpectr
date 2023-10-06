@@ -1,0 +1,128 @@
+@import "./fonts.css";
+@import './commons.css';
+
+
+/* --------------Main Page-------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------header--------------- */
+
+.header {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__block a {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__block a:hover {
+    color: var(--white-header-text-hover);
+}
+
+.rborder {
+    border-bottom: 3px solid var(--main-third-color);
+}
+
+.info_choose {
+    padding-left: var(--main-horizontal-padding);
+    padding-right: var(--main-horizontal-padding);
+    margin-bottom: 100px;
+}
+
+.info_choose__title.h2-txt {
+    border-bottom: none;
+}
+
+.info_choose__title_wrapper {
+    margin-bottom: 41px;
+}
+
+.info_choose__banner {
+    padding: 32px 60px;
+    background: var(--main-second-color);
+}
+
+.info_choose__banner-title {
+    color: var(--main-first-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.info_choose__banner__points_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.info_choose__banner__points {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info_choose__banner-point {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.info_choose__banner-mark {
+    max-width: 15px;
+    min-width: 15px;
+    max-height: 15px;
+    min-height: 15px;
+    background: var(--main-four-color);
+    border-radius: 50%;
+}
+
+.info_choose__banner-point p {
+    color: var(--main-first-color);
+}
+
+@media (max-width: 960px) {
+    .info_choose__banner__points_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info_choose__banner-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .info_choose__banner {
+        padding: 20px;
+    }    
+}

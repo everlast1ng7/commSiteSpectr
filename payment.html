@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/styles/commons.css">
+    <link rel="stylesheet" href="/styles/payment.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header__logo">
+                <a href="/index.html">
+                    <img src="./assets/logo_blue.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <nav class="header__block">
+                <a href="/catalog.html">Каталог</a>
+                <a href="#">Услуги</a>
+                <a href="/about.html">О компании</a>
+                <a href="/comments.html">Отзывы</a>
+                <a href="/contacts.html">Контакты</a>
+                <a href="#">+7 (812) 602-12-60</a>
+            </nav>
+            <div class="burger">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </div>
+            <div class="overlay"></div>
+            <div class="burger_menu">
+                <div class="burger_menu-logo">
+                    <img src="/assets/logo_blue.png" alt="logo">
+                </div>
+                <div class="burger_menu-border"></div>
+                <div class="burger_menu__container">
+                    <div class="burger_menu__container-block">
+                        <a href="/catalog.html" class="burger_menu-container-block-title">Каталог</a>
+                        <a href="#" class="burger_menu-container-block-text">Импульсные дефектоскопы</a>
+                        <a href="#" class="burger_menu-container-block-text">Дефектоскопы <br> постоянного потенциала</a>
+                        <a href="#" class="burger_menu-container-block-text">Беспроводные <br> аккумуляторные блоки</a>
+                        <a href="#" class="burger_menu-container-block-text">Кроулеры</a>
+                        <a href="#" class="burger_menu-container-block-text">Аксессуары</a>
+                    </div>
+                    <div class="burger_menu__container-block">
+                        <a href="#" class="burger_menu-container-block-title">Услуги</a>
+                        <a href="#" class="burger_menu-container-block-text">Ремонт</a>
+                        <a href="#" class="burger_menu-container-block-text">Техническое обслуживание и электротехнические испытания</a>
+                        <a href="#" class="burger_menu-container-block-text">Утилизация</a>
+                        <a href="#" class="burger_menu-container-block-text">Дубликаты паспортов</a>
+                    </div>
+                    <!-- <div class="burger_menu__container-block"> -->
+                        <a href="/about.html" class="burger_menu-container-block-title">О компании</a>
+                    <!-- </div> -->
+                    <!-- <div class="burger_menu__container-block"> -->
+                        <a href="/payment.html" class="burger_menu-container-block-title">Доставка и оплата</a>
+                    <!-- </div> -->
+                    <div class="burger_menu__container-block">
+                        <a href="#" class="burger_menu-container-block-title">Документация</a>
+                        <a href="#" class="burger_menu-container-block-text">Руководство по эксплуатации</a>
+                        <a href="#" class="burger_menu-container-block-text">Условия гарантии</a>
+                        <a href="#" class="burger_menu-container-block-text">Экспертные заключения</a>
+                    </div>
+                    <div class="burger_menu__container-block">
+                        <a href="#" class="burger_menu-container-block-title">Справка</a>
+                        <a href="#" class="burger_menu-container-block-text">Как правильно выбрать аппарат</a>
+                        <a href="#" class="burger_menu-container-block-text">Согласование в Роспотребнадзоре</a>
+                        <a href="#" class="burger_menu-container-block-text">Группы электробезопасности</a>
+                    </div>
+                    <!-- <div class="burger_menu__container-block"> -->
+                        <a href="/comments.html" class="burger_menu-container-block-title">Отзывы</a>
+                    <!-- </div> -->
+                    <div class="burger_menu__container-block">
+                        <a href="/contacts.html" class="burger_menu-container-block-title">Контакты</a>
+                        <p><span class="lang ru">Ru</span>|<span class="lang eng">Eng</span></p>
+                    </div>
+                    <div class="burger_menu__container-block">
+                        <a href="#" class="burger_menu-container-block-title">Приемная:</a>
+                        <a href="#" class="burger_menu-container-block-text">+7 (812) 602-12-60</a>
+                        <a href="#" class="burger_menu-container-block-text">info@spectroflash.ru</a>
+                    </div>
+                    <div class="burger_menu__container-block">
+                        <a href="#" class="burger_menu-container-block-title">Отдел продаж:</a>
+                        <a href="#" class="burger_menu-container-block-text">+7 (812) 602-12-58</a>
+                        <a href="#" class="burger_menu-container-block-text">sbyt@spectroflash.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="payment">
+        <div class="mark-div">
+            <img src="./assets/mark.png" alt="mark" class="mark">
+        </div>
+        <div class="payment__title_wrapper">
+            <h1 class="payment__title h1-txt">Оплата и доставка</h1>
+        </div>
+        <p class="payment__title_text txt">Перед началом доставки вам не забудьте отправить <br> заявку отделу продаж, указав в ней:</p>
+        <div class="payment__describe">
+            <div class="payment__describe-col">
+                <div class="payment__describe_block">
+                    <div class="payment__describe_block-title">
+                        <div class="xMark"></div>
+                        <div class="describe_block-title txt">Контактную информацию</div>
+                    </div>
+                    <p class="txt">ФИО, e-mail и телефон для связи</p>
+                </div>
+                <div class="payment__describe_block">
+                    <div class="payment__describe_block-title">
+                        <div class="xMark"></div>
+                        <div class="describe_block-title txt">Реквизиты банка</div>
+                    </div>
+                    <p class="txt">Наименование банка, БИК, расчетный счет, корреспондентский счет</p>
+                </div>
+            </div>
+            <div class="payment__describe-col">
+                <div class="payment__describe_block">
+                    <div class="payment__describe_block-title">
+                        <div class="xMark"></div>
+                        <div class="describe_block-title txt">Реквизиты для заказа</div>
+                    </div>
+                    <p class="txt">Наименование организации, ИНН, должность <br> и ФИО руководителя, КПП, юридический и <br> почтовый адреса</p>
+                </div>
+                <div class="payment__describe_block">
+                    <div class="payment__describe_block-title">
+                        <div class="xMark"></div>
+                        <div class="describe_block-title txt">Адрес доставки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner__container">
+            <div class="banner__container_signs">
+                <span>!</span><span>!</span><span>!</span>
+            </div>
+            <div class="banner__container_text">
+               <p class="txt">На основании полученной заявки Вам выставляется счет на предоплату. При наличии аппарата на складе сразу после поступления денежных средств на наш расчетный счет в установленные договором сроки осуществляется отгрузка аппаратов</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="deadline">
+        <div class="mark-div">
+            <img src="./assets/mark.png" alt="mark" class="mark">
+        </div>
+        <div class="deadline__title_wrapper">
+            <h1 class="deadline__title h1-txt"><span class="red-line-between">Сроки и способ </span>доставки</h1>
+        </div>
+        <div class="deadline__info">
+            <div class="deadline__info_block">
+                <div class="deadline__info_block-describe">
+                    <div class="xMark"></div>
+                    <div class="txt">Для импульсных аппаратов срок поставки <br> составляет 30 дней, для аппаратов с <br> постоянным потенциалом - 60 дней.</div>
+                </div>
+                <div class="deadline__info_block-describe">
+                    <div class="xMark"></div>
+                    <div class="txt">Доставка продукции осуществляется компанией <br> Деловые Линии. </div>
+                </div>
+                <p class="deadline__info_block-ps">
+                    <p class="txt"><span class="typography">*</span>По Вашему желанию доставка может быть осуществлена <br> любой транспортной компанией по выбору клиента с забором <br> груза с завода-изготовителя.</p>
+                </p>
+            </div>
+            <div class="deadline__info_block">
+                <div class="deadline__info_block-img">
+                    <img src="/assets/deadline-img.webp" alt="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conditions">
+        <div class="mark-div">
+            <img src="./assets/mark.png" alt="mark" class="mark">
+        </div>
+        <div class="conditions__title_wrapper">
+            <h1 class="conditions__title h1-txt">Условия поставки</h1>
+        </div>
+
+        <div class="conditions__info">
+            <div class="conditions__info_col">
+                <div class="conditions__info_col__block">
+                    <div class="red-bg"><p>1</p></div>
+                    <p class="txt">Предоплата 100%.</p>
+                </div>
+                <div class="conditions__info_col__block">
+                    <div class="red-bg"><p>2</p></div>
+                    <p class="txt">Отгрузка со склада 
+                        ООО "Спектрофлэш" 
+                        в г. Санкт-Петербург или 
+                        ж/д, авиа, автотранспортом.</p>
+                </div>
+            </div>
+            <div class="conditions__info_col">
+                <div class="conditions__info_col__block">
+                    <div class="red-bg"><p>3</p></div>
+                    <p class="txt">В случае отправки аппаратов 
+                        ж/д, авиа, автотранспортом, к стоимости аппарата добавляется стоимость транспортных расходов, стоимость услуг по страхованию груза, стоимость транспортной тары.</p>
+                </div>
+            </div>
+            <div class="conditions__info_col">
+                <div class="conditions__info_col__block">
+                    <div class="red-bg"><p>4</p></div>
+                    <p class="txt">Для получения аппаратов необходимо предоставить до момента отгрузки согласованую с территориальным управлением Роспотребнадзора по месту эксплуатации аппаратов заявку на приобретение аппаратов по форме приложения 2 ОСПОРБ-99/2010.</p>
+                </div>
+            </div>
+        </div>
+        <div class="conditions__files">
+            <div class="conditions__files_block">
+                <div class="conditions__files_block-img">
+                    <img src="/assets/paper.webp" alt="photo">
+                </div>
+                <div class="conditions__files_block_btn">
+                    <p class="txt">Бланк заявки (.docx)</p>
+                    <button class="conditions-button btn">Скачать бланк</button>
+                </div>
+            </div>
+            <div class="conditions__files_block">
+                <div class="conditions__files_block-img">
+                    <img src="/assets/paper.webp" alt="photo">
+                </div>
+                <div class="conditions__files_block_btn">
+                    <p class="txt">Образец заполнения 
+                        заявки (.pdf)</p>
+                    <button class="conditions-button btn">Скачать образец</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini_footer">
+        <div class="mini_footer__container">
+            <div class="mini_footer__container_up">
+                <div class="mini_footer__container_up__block">
+                    <h1>Каталог</h1>
+                    <div class="mini_footer__container_up__block-urls">
+                        <a href="#">Импульсные дефектоскопы</p>
+                        <a href="#">Дефектоскопы <br> постоянного потенциала</a>
+                        <a href="#">Беспроводные <br> аккумуляторные блоки</a>
+                        <a href="#">Кроулеры</a>
+                        <a href="#">Аксессуары</a>
+                    </div>
+                </div>
+                <div class="mini_footer__container_up__block">
+                    <h1>Услуги</h1>
+                    <div class="mini_footer__container_up__block-urls">
+                        <a href="#">Ремонт</a>
+                        <a href="#">Техническое обслуживание <br> и электротехнические испытания</a>
+                        <a href="#">Утилизация</a>
+                        <a href="#">Дубликаты паспортов</a>
+                    </div>
+                </div>
+                <div class="mini_footer__container_up__block">
+                    <h1>Справки и статьи</h1>
+                    <div class="mini_footer__container_up__block-urls">
+                        <a href="#">Как правильно выбрать аппарат</a>
+                        <a href="#">Руководство по эксплуатации</a>
+                        <a href="#">Условия гарантии</a>
+                        <a href="#">Экспертные заключения</a>
+                        <a href="#">Согласование в роскомнадзоре</a>
+                        <a href="#">Группы электробезопасности</a>
+                    </div>
+                </div>
+                <div class="mini_footer__container_up__block">
+                    <h1>О компании</h1>
+                    <div class="mini_footer__container_up__block-urls">
+                        <a href="/about.html">О компании</a>
+                        <a href="/payment.html">Доставка и оплата</a>
+                        <a href="/faq.html">Faq</a>
+                        <a href="/comments.html">Отзывы</a>
+                        <a href="/contacts.html">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mini_footer-border"></div>
+            <div class="mini_footer__container_down">
+                <div class="mini_footer__container_down-logo">
+                    <img src="/assets/logo.png" alt="photo">
+                </div>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">+7 (812) 602-12-60</a>
+                <a href="#">+7 (812) 602-12-58</a>
+                <p><span class="lang ru">Ru</span>|<span class="lang eng">Eng</span></p>
+            </div>
+        </div>
+
+        <!-- mobile mini_footer 1200 -->
+        <div class="mini_footer__container-mobile">
+            <div class="mini_footer__container_up">
+                <div class="mini_footer__container_up-row">
+                    <div class="mini_footer__container_up__block">
+                        <h1>Каталог</h1>
+                        <div class="mini_footer__container_up__block-urls">
+                            <a href="#">Импульсные дефектоскопы</p>
+                            <a href="#">Дефектоскопы <br> постоянного потенциала</a>
+                            <a href="#">Беспроводные <br> аккумуляторные блоки</a>
+                            <a href="#">Кроулеры</a>
+                            <a href="#">Аксессуары</a>
+                        </div>
+                    </div>
+                    <div class="mini_footer__container_up__block">
+                        <h1>Услуги</h1>
+                        <div class="mini_footer__container_up__block-urls">
+                            <a href="#">Ремонт</a>
+                            <a href="#">Техническое обслуживание <br> и электротехнические испытания</a>
+                            <a href="#">Утилизация</a>
+                            <a href="#">Дубликаты паспортов</a>
+                            <a href="#">+7 (812) 602-12-58</a>
+                        </div>
+                    </div>
+                    <div class="mini_footer__container_up__block">
+                        <h1>О компании</h1>
+                        <div class="mini_footer__container_up__block-urls">
+                            <a href="/about.html">О компании</a>
+                            <a href="/payment.html">Доставка и оплата</a>
+                            <a href="/faq.html">Faq</a>
+                            <a href="/comments.html">Отзывы</a>
+                            <a href="/contacts.html">Контакты</a>
+                            <a href="#">+7 (812) 602-12-60</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mini_footer__container_middle-row">
+                <div class="mini_footer__container_up__block">
+                    <h1>Справки и статьи</h1>
+                    <div class="mini_footer__container_up__block-urls middle-row-urls">
+                        <div class="middle-row-urls-mini_block">
+                            <a href="#">Как правильно выбрать аппарат</a>
+                            <a href="#">Руководство по эксплуатации</a>
+                        </div>
+                        <div class="middle-row-urls-mini_block">
+                            <a href="#">Условия гарантии</a>
+                            <a href="#">Экспертные заключения</a>
+                        </div>
+                        <div class="middle-row-urls-mini_block">
+                            <a href="#">Согласование в роскомнадзоре</a>
+                            <a href="#">Группы электробезопасности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mini_footer-border"></div>
+            <div class="mini_footer__container_down">
+                <div class="mini_footer__container_down-logo">
+                    <img src="/assets/logo.png" alt="photo">
+                </div>
+                <a href="#">Политика конфиденциальности</a>
+                <p><span class="lang ru">Ru</span>|<span class="lang eng">Eng</span></p>
+            </div>
+        </div>
+        <!-- mobile mini_footer 1200-->
+
+        <!-- mobile mini_footer-->
+        <div class="mini_footer__container-mobile mini-footer-860">
+            <div class="mini_footer__container_up">
+                <div class="mini_footer__container_up-row">
+                    <div class="mobile-mini-footer-col">
+                        <div class="mini_footer__container_up__block">
+                            <h1>Каталог</h1>
+                            <div class="mini_footer__container_up__block-urls">
+                                <a href="#">Импульсные дефектоскопы</p>
+                                <a href="#">Дефектоскопы <br> постоянного потенциала</a>
+                                <a href="#">Беспроводные <br> аккумуляторные блоки</a>
+                                <a href="#">Кроулеры</a>
+                                <a href="#">Аксессуары</a>
+                            </div>
+                        </div>
+                        <div class="mini_footer__container_up__block">
+                            <h1>Услуги</h1>
+                            <div class="mini_footer__container_up__block-urls">
+                                <a href="#">Ремонт</a>
+                                <a href="#">Техническое обслуживание <br> и электротехнические испытания</a>
+                                <a href="#">Утилизация</a>
+                                <a href="#">Дубликаты паспортов</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-mini-footer-col">
+                        <div class="mini_footer__container_up__block">
+                            <h1>Справки и статьи</h1>
+                            <div class="mini_footer__container_up__block-urls">
+                                <a href="#">Как правильно выбрать <br> аппарат</a>
+                                <a href="#">Руководство <br> по эксплуатации</a>
+                                <a href="#">Условия <br> гарантии</a>
+                                <a href="#">Экспертные <br> заключения</a>
+                                <a href="#">Согласование в <br> роскомнадзоре</a>
+                                <a href="#">Группы <br> электробезопасности</a>
+                            </div>
+                        </div>
+                        <div class="mini_footer__container_up__block">
+                            <h1>О компании</h1>
+                            <div class="mini_footer__container_up__block-urls">
+                                <a href="/about.html">О компании</a>
+                                <a href="/payment.html">Доставка и оплата</a>
+                                <a href="/faq.html">Faq</a>
+                                <a href="/comments.html">Отзывы</a>
+                                <a href="/contacts.html">Контакты</a>
+                                <a href="#">+7 (812) 602-12-60</a>
+                                <a href="#">+7 (812) 602-12-58</a>
+                                <a href="#">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mini_footer-border"></div>
+            <div class="mini_footer__container_down">
+                <div class="mini_footer__container_down-logo">
+                    <img src="/assets/logo.png" alt="photo">
+                </div>
+                <p><span class="lang ru">Ru</span>|<span class="lang eng">Eng</span></p>
+            </div>
+        </div>
+        <!-- mobile mini_footer-->
+
+    </section>
+
+    <script src="/scripts/utils/commons.js"></script>
+    <script src="/scripts/payment.js"></script>
+</body>
+</html>
