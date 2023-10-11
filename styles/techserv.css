@@ -345,7 +345,7 @@
 }
 
 .form__wrapper {
-    background: url(/assets/form-bg.webp);
+    background: url(assets/form-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 56px 30px;

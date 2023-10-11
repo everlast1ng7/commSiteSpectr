@@ -1605,31 +1605,31 @@
 }
 
 .service-bg-1 {
-    background-image: url(/assets/service-bg-1.png);
+    background-image: url(assets/service-bg-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .service-bg-2 {
-    background-image: url(/assets/service-bg-2.png);
+    background-image: url(assets/service-bg-2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .service-bg-3 {
-    background-image: url(/assets/service-bg-3.png);
+    background-image: url(assets/service-bg-3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .service-bg-4 {
-    background-image: url(/assets/service-bg-4.png);
+    background-image: url(assets/service-bg-4.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .service-bg-5 {
-    background-image: url(/assets/service-bg-5.png);
+    background-image: url(assets/service-bg-5.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -10,7 +10,7 @@
 //     })
 // })
 
-console.log(window.location);
+// console.log(window.location);
 
 // const params = location.search
 // .slice(1)
@@ -27,9 +27,9 @@ const arr = params.get('arr');
 const obj = params.get('obj');
 console.log(a);
 console.log(JSON.parse(obj));
-arr.forEach((item) => {
-    console.log(JSON.parse(item));
-});
+// arr.forEach((item) => {
+//     console.log(JSON.parse(item));
+// });
 
 
 
