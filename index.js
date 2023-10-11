@@ -349,3 +349,25 @@ showClientsCards();
 
 // ----------------------documents slider------------------------
 
+
+const b = document.querySelector('.section_general_slider__left_block-button_watch');
+
+b.addEventListener('click', (e) => {
+    console.log(window.location);
+    const host = window.location.host;
+    const path = '/card.html';
+    const params = {
+        a: 'aaa',
+        b: 'sss',
+        obj: JSON.stringify({
+            i: 'ppp'
+        }),
+        arr: [JSON.stringify({
+            key1: 'qqq'
+        }), JSON.stringify({
+            key2: 'yyy'
+        })]
+    }
+    const url = `${path}?${new URLSearchParams(params)}`;
+    window.location.replace(url);
+})

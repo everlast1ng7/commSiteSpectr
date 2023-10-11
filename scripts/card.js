@@ -10,6 +10,47 @@
 //     })
 // })
 
+console.log(window.location);
+
+// const params = location.search
+// .slice(1)
+// .split('&')
+// .map(p => p.split('='))
+// .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {});
+
+// console.log(params);
+
+const params = new  URLSearchParams(window.location.search);
+
+const a = params.get('a');
+const arr = params.get('arr');
+const obj = params.get('obj');
+console.log(a);
+console.log(JSON.parse(obj));
+arr.forEach((item) => {
+    console.log(JSON.parse(item));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const xmark = document.querySelectorAll('.xmark');
 const names = document.querySelectorAll('.name');
 
@@ -32,3 +73,4 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
