@@ -7,7 +7,7 @@
 const clientSection = document.querySelector('.clients');
 const clients_arrow_left = clientSection.querySelector('.clients_slide_arrow-left');
 const clients_arrow_right = clientSection.querySelector('.clients_slide_arrow-right');
-const clients_cards = clientSection.querySelector('.clients__cards')
+const clients_cards = clientSection.querySelector('.clients__cards');
 
 // const images = document.querySelectorAll('.documents__sliders__slider');
 // const docs_pop_up = document.querySelector('.docs-pop_up'); 
@@ -34,19 +34,20 @@ const clients_cards = clientSection.querySelector('.clients__cards')
 
 // ----------------------max height slide------------------------
 
-// function setEqualSlideHeight(swiper) {
-//     var maxHeight = 0;
-//     var slides = swiper.el.querySelectorAll('.swiper-slide');
-//     for (var i = 0; i < slides.length; i++) {
-//       var slideHeight = slides[i].clientHeight;
-//       if (slideHeight > maxHeight) {
-//         maxHeight = slideHeight;
-//       }
-//     }
-//     for (var i = 0; i < slides.length; i++) {
-//       slides[i].style.height = maxHeight + 'px';
-//     }
-// }
+// const blocks = document.querySelectorAll('.catalog__sliders__slider'); // выбираем все блоки
+
+// let maxHeight = 0; // задаем начальное значение максимальной высоты
+
+// blocks.forEach(block => { // перебираем все блоки
+//   const blockHeight = block.offsetHeight; // получаем высоту текущего блока
+//   if (blockHeight > maxHeight) { // если высота текущего блока больше максимальной
+//     maxHeight = blockHeight; // обновляем максимальную высоту
+//   }
+// });
+
+// blocks.forEach(block => { // перебираем все блоки еще раз
+//   block.style.height = `${maxHeight}px`; // устанавливаем максимальную высоту для каждого блока
+// });
 
 // ----------------------max height slide------------------------
 
@@ -139,9 +140,11 @@ var catalog_desktop_swiper = new Swiper(".desktop-catalog", {
     // autoHeight: true,
     loop: true,
     speed: 600,
+    slidesPerGroup: 1,
     slidesPerView: 2,
-    spaceBetween: 20 
+    // spaceBetween: 20 
 });
+
 // catalog_sliderItems.forEach((slide, index) => {
 //     if(index !== 0) {
 //         slide.classList.add('hidden');
@@ -349,25 +352,82 @@ showClientsCards();
 
 // ----------------------documents slider------------------------
 
+// ----------------------popup schema and req------------------------
+
+const pop_up_schema = document.querySelector('.pop_up-schema');
+const xmark_pop_up_schema = document.querySelector('.xmark-pop-up-schema');
+const pop_up_info_schema = document.querySelector('.pop_up-info-schema');
+const footer_info__buttons_schema = document.querySelector('.footer_info__buttons-schema');
+
+const pop_up_req = document.querySelector('.pop_up-req');
+const xmark_pop_up_req = document.querySelector('.xmark-pop-up-req');
+const pop_up_info_req = document.querySelector('.pop_up-info-req');
+const footer_info__buttons_req = document.querySelector('.footer_info__buttons-req');
+
+
+function openPopUpWindow(btn, el) {
+    btn.addEventListener('click', (e) => {
+        el.style.display = 'flex';
+    })
+} 
+
+function closePopUpWindow(el, xmark) {
+    xmark.addEventListener('click', (e) => {
+        el.style.display = 'none';
+    })
+}
+
+openPopUpWindow(footer_info__buttons_schema, pop_up_schema);
+openPopUpWindow(footer_info__buttons_req, pop_up_req);
+
+closePopUpWindow(pop_up_schema, xmark_pop_up_schema);
+closePopUpWindow(pop_up_req, xmark_pop_up_req);
+
+// ----------------------popup schema and req------------------------
+
 
 const b = document.querySelector('.section_general_slider__left_block-button_watch');
+
+const arina_1 = {
+    name: 'nikita',
+    descr: 'ooooooo',
+    im: 'xsaxsdw',
+    utils: {
+        utilsName: 'kkkkkkk'
+    },
+}
+
+const dataById = {
+    arina_1: arina_1,
+}
 
 b.addEventListener('click', (e) => {
     console.log(window.location);
     const host = window.location.host;
     const path = '/card.html';
+    const id = e.target.id || 'arina_1';
+    const product = dataById[id];
     const params = {
-        a: 'aaa',
-        b: 'sss',
-        obj: JSON.stringify({
-            i: 'ppp'
-        }),
-        arr: [JSON.stringify({
-            key1: 'qqq'
-        }), JSON.stringify({
-            key2: 'yyy'
-        })]
+        name: product.name,
+        descr: product.descr,
+        im: product.im,
+        utils: JSON.stringify(product.utils),
+        // arina_1: JSON.stringify({
+        //     name: '',
+        //     text: '',
+        //     o: '',
+        // }),
+        // arr: JSON.stringify([{
+        //     key1: 'qqq'
+        // }, {
+        //     key2: 'yyy'
+        // }])
     }
     const url = `${path}?${new URLSearchParams(params)}`;
     window.location.replace(url);
 })
+
+// 0) Сделать объект с продуктами
+// 1) Получить id кнопки
+// 2) Достаю из объекта нужный id 
+// 3) Cделать поля карточки в объекте params

@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border-bottom: 1px solid var(--main-second-color);
 }
 
 .header__block {
@@ -55,6 +56,10 @@
 
 .conditions__title_wrapper {
     margin-bottom: 84px;
+}
+
+.conditions__title.h1-txt {
+    color: var(--main-second-color);
 }
 
 .conditions__container {

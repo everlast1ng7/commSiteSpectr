@@ -25,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border-bottom: 1px solid var(--main-second-color);
 }
 
 .header__block {
@@ -57,6 +58,10 @@
 .conclusions__title_wrapper {
     margin-bottom: 50px;
 }
+
+.conclusions__title.h1-txt {
+    color: var(--main-second-color);
+} 
 
 .conclusions__describe {
     display: flex;

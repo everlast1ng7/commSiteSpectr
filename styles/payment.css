@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border-bottom: 1px solid var(--main-second-color);
 }
 
 .header__block {
@@ -55,6 +56,10 @@
 
 .payment__title_wrapper {
     margin-bottom: 20px;
+}
+
+.payment__title.h1-txt {
+    color: var(--main-second-color);
 }
 
 .payment__title_text {
@@ -180,7 +185,7 @@
 }
 
 .deadline__info_block-img img {
-    width: 450px;
+    width: 500px;
 }
 
 @media (max-width: 1100px) {

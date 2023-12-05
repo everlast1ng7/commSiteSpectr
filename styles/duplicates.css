@@ -25,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border-bottom: 1px solid var(--main-second-color);
 }
 
 .header__block {
@@ -48,6 +49,10 @@
     color: var(--white-header-text-hover);
 }
 
+.require_title.h1-txt {
+    color: var(--main-second-color);
+}
+
 .form {
     padding-left: var(--main-horizontal-padding);
     padding-right: var(--main-horizontal-padding);
@@ -67,7 +72,7 @@
     gap: 20px;
 }
 
-.form__wrapper_title.h2-txt {
+.form__wrapper_title.h4-txt {
     color: var(--main-second-color);
     border-bottom: none;
 }
@@ -218,7 +223,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.gost_title.h2-txt {
+.gost_title.h4-txt {
     color: var(--main-second-color);
     margin-bottom: 30px;
     border-bottom: none;
@@ -417,7 +422,7 @@
 }
 
 .form-2__wrapper {
-    background: url(assets/duplicates-form-2-bg.webp);
+    background: url(/assets/form-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 56px 30px;
@@ -427,7 +432,7 @@
     gap: 20px;
 }
 
-.form-2__wrapper_title.h2-txt {
+.form-2__wrapper_title.h4-txt {
     color: var(--main-four-color);
     border-bottom: none;
 }
@@ -444,6 +449,9 @@
 
 .form-2__wrapper_chekbox label {
     color: var(--main-first-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     display: inline;
 }
 

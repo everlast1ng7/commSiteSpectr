@@ -25,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border-bottom: 1px solid var(--main-second-color);
 }
 
 .header__block {
@@ -58,8 +59,9 @@
     margin-bottom: 30px;
 }
 
-.head_title.h2-txt {
+.head_title.h1-txt {
     border-bottom: none;
+    color: var(--main-second-color);
 }
 
 .red {
@@ -79,7 +81,14 @@
 
 .head__info_block__images {
     display: flex;
+    /* justify-content: space-between; */
     gap: 40px;
+}
+
+.head__info_block__images img {
+    width: 310px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .head__info_block {
@@ -88,13 +97,20 @@
     gap: 30px;
 }
 
+@media (max-width: 1700px) {
+    .guarantee_head-img-3,
+    .guarantee_head-img-4 {
+        display: none;
+    }
+}
+
 @media (max-width: 960px) {
     .head__info_block__images img {
         max-width: 100%;
         height: auto;
     }
 
-    .head__info_block__images img:last-child {
+    .head__info_block__images img:nth-child(2) {
         display: none;
     }
 }
@@ -205,7 +221,7 @@
 }
 
 .counts_title.h2-txt {
-    color: var(--main-second-color);
+    /* color: var(--main-second-color); */
     border-bottom: none;
 }
 
@@ -231,7 +247,7 @@
 }
 
 .count__wrapper_row-block {
-    padding: 32px 17px;
+    /* padding: 32px 17px; */
     border-radius: 5px;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -241,20 +257,27 @@
 
 .count__wrapper_row-block-1 {
     flex: 2;
-    padding: 32px 17px;
+    /* padding: 32px 17px; */
 }
 
 .count__wrapper_row-block-2 {
     flex: 3;
 }
 
+@media (max-width: 1890px) {
+    .count__wrapper_row-block-2 {
+        flex: 3;
+        width: none;
+    }
+}
+
 .count__wrapper_row-block-3 {
     flex: 2;
-    padding: 32px 17px;
+    /* padding: 32px 17px; */
 }
 
 .count__wrapper_row-block-4 {
-    padding: 32px 17px;
+    /* padding: 32px 17px; */
     border-radius: 5px;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -263,7 +286,7 @@
 }
 
 .count__wrapper_row-block-5 {
-    padding: 32px 17px;
+    /* padding: 32px 17px; */
     border-radius: 5px;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -273,6 +296,24 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
     font-weight: 600;
+    margin: 20px 15px;
+}
+
+/* Проблема с выравниванием блоков, поэтому делаю паддинг так: */
+
+.count__wrapper_row-block p:last-child {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.count__wrapper_row-block-4 p:last-child {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.count__wrapper_row-block-5 p:last-child {
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 .attention {
@@ -302,7 +343,7 @@
 .deadline {
     padding-left: var(--main-horizontal-padding);
     padding-right: var(--main-horizontal-padding);
-    margin-bottom: 33px;
+    margin-bottom: 100px;
 }
 
 .deadline__title_wrapper {
@@ -310,7 +351,7 @@
 }
 
 .deadline_title.h2-txt {
-    color: var(--main-second-color);
+    /* color: var(--main-second-color); */
     border-bottom: none;
 }
 
@@ -420,7 +461,7 @@
 }
 
 .form__wrapper {
-    background: url(assets/form-bg.webp);
+    background: url(/assets/form-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 56px 30px;

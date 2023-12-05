@@ -27,6 +27,11 @@
 
 .logo {
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }
 
 .swiper-slide {
@@ -264,11 +269,21 @@ display: block;
 .mark {
     position: absolute;
     left: -8vw;
-    top: 25px;
+    top: 22px;
 }
 
 .swiper-pagination-bullet {
     background-color: var(--main-third-color);
+}
+
+.h0-txt {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* border-bottom: 3px solid var(--main-third-color); */
+    width: fit-content;
 }
 
 .h1-txt {
@@ -277,7 +292,7 @@ display: block;
     font-size: 52px;
     font-weight: 700;
     text-transform: uppercase;
-    border-bottom: 3px solid var(--main-third-color);
+    /* border-bottom: 3px solid var(--main-third-color); */
     width: fit-content;
 }
 
@@ -287,7 +302,17 @@ display: block;
     font-size: 47px;
     font-weight: 700;
     text-transform: uppercase;
-    border-bottom: 3px solid var(--main-third-color);
+    /* border-bottom: 3px solid var(--main-third-color); */
+    width: fit-content;
+}
+
+.h4-txt {
+    color: var(--main-font-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* border-bottom: 3px solid var(--main-third-color); */
     width: fit-content;
 }
 
@@ -295,7 +320,7 @@ display: block;
     color: var(--main-font-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 @media (max-width: 1300px) {
@@ -339,8 +364,13 @@ display: block;
 }
 
 @media (max-width: 1200px) {
+    .h0-txt {
+        font-size: 50px;
+        text-align: left;
+    }
+
     .h1-txt {
-        font-size: 48px;
+        font-size: 41px;
         text-align: left;
     }
 
@@ -366,8 +396,12 @@ display: block;
 }
 
 @media (max-width: 820px) {
+    .h0-txt {
+        font-size: 39px;
+    }
+
     .h1-txt {
-        font-size: 43px;
+        font-size: 35px;
     }
 
     .h2-txt {
@@ -405,12 +439,16 @@ display: block;
 }
 
 @media (max-width: 500px) {
+    .h0-txt {
+        font-size: 31px;
+    }
+
     .h1-txt {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .h2-txt {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
@@ -428,17 +466,35 @@ display: block;
 }
 
 @media (max-width: 400px) {
+    .h0-txt {
+        font-size: 25px;
+    }
+
     .h1-txt {
-        font-size: 30px;
+        font-size: 23px;
     }
 
     .h2-txt {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .btn {
         font-size: 16px;
         padding: 10px 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .h0-txt {
+        font-size: 22px;
+    }
+
+    .h1-txt {
+        font-size: 21px;
+    }
+
+    .h2-txt {
+        font-size: 20px;
     }
 }
 
@@ -707,3 +763,85 @@ display: block;
     }
 }
 
+.blue {
+    color: var(--main-second-color);
+    cursor: pointer;
+}
+
+.popup_consultation {
+    position: fixed;
+    top: 50%;
+    left: -2000px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    -webkit-box-shadow: 4px 4px 52px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 4px 4px 52px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 4px 4px 52px 0px rgba(0, 0, 0, 0.45);
+    padding: 14px 29px;
+    background: var(--main-first-color);
+    border-radius: 5px;
+  }
+  
+  .popup_consultation.show {
+    left: 10%;
+  }
+  
+  .close_consultation {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .popup_consultation__title {
+    color: var(--main-second-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .popup_consultation__descr {
+    margin-bottom: 19px;
+  }
+
+  .popup_consultation__form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .popup_consultation__form_inputs input {
+    border-radius: 5px;
+    background: var(--white-bg-hover);
+    border-radius: 5px;
+    padding: 11px 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+  }
+
+  .custom-checkbox+label {
+    display: block;
+  }
+
+  .popup_consultation__button-submit {
+    margin-top: 28px;
+    background: var(--main-four-color);
+  }
+
+  .popup_consultation__button-submit:hover {
+    background: var(--orange-bg-hover);
+  }
+
+  @media (max-width: 500px) {
+    .popup_consultation__title {
+        font-size: 30px;
+    }
+  }
